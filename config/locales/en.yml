@@ -66,9 +66,9 @@ en:
       headline: 'This is a message in a safe with the following message:'
       download: Download text
       delete: Delete message
-      reply: Send a reply
+      reply: <span style="color:#a00"><strong>Logout</strong></span> or reply
       info_headline: Information about messages in a safe
-      #info: If you send a message via email, every network operator and your email provider can (and probably do) read it. That's why the sender of this tape put the message into a self-destructive tape and sent you a link to download it. This way, your email provider cannot read the message unless he would actually open the link to the tape. But the link is self-destructive. This means that when somebody else would have intercepted the tape, you would not have been able to read it as you do right now. Since you opened this tape, it has been removed from our sever and the link you received will not work any longer. As long as you don't leave this page, you can download the tape as a text file by clicking on "download". If you would like to, you can reply to this message by creating a new tape yourself. Just click on "back to the main menu" and then on "self-destructive tape" for more instructions.
+      info: If you send a message via email, every network operator and your email provider can (and probably do) read it. That's why the sender of this link put the message into a safe and sent you a link to read it. This way, your email provider cannot read the message unless he would actually open the link to the safe and also know the password. If you would like to, you can reply to this message by creating a new message in a safe yourself. Just click on "back to the main menu" and then on "message in a safe" for more instructions.
 
   # ActiveModel
   attributes:

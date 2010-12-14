@@ -16,7 +16,8 @@ module Pigeonhole
     protected
     
     def assert_ssl
-      render :text => 'This is no secure SSL/TLS connection.', :status => 408 and return unless (request.ssl? or Rails.env.development?)
+      return true if (request.ssl? or Rails.env.development?)
+      render :text => 'This is no secure SSL/TLS connection.', :status => 408 and return
     end
     
   end

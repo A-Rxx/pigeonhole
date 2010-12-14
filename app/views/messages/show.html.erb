@@ -35,7 +35,7 @@
     </div>
     <div class="menu_item">
       <%= link_to image_tag('message.png', :height => 61), root_url %><br/>
-      <%=t '.reply' %>
+      <%=raw t('.reply') %>
     </div>
   <% unless @message.attachment %>
   </div>

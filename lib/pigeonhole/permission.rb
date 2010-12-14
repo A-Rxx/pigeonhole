@@ -10,6 +10,7 @@ module Pigeonhole
     end
     
     def perform_login
+      Rails.logger.debug "PERMISSION: Logging in now"
       session[:pincode] = pincode
       session[:timestamp] = Time.now
     end
@@ -30,11 +31,13 @@ module Pigeonhole
     # Checks whether there has been a successful login before via the session
     #
     def logged_in_via_session?
+      Rails.logger.debug "PERMISSION: timestamp is #{session[:timestamp]}, submitted code is #{session[:pincode]}, pincode is #{pincode}"
       reset_session if session[:timestamp] and session[:timestamp] < 1.hour.ago
       session[:pincode] == pincode
     end
     
     def logged_in_via_form?
+      Rails.logger.debug "PERMISSION: timestamp is #{session[:timestamp]}, submitted code is #{params[:login]}, pincode is #{pincode}"
       params[:login] == pincode
     end
     

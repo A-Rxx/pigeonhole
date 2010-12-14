@@ -1,0 +1,29 @@
+<div id="header">
+  <%=t '.headline' %>
+</div>
+
+<%= form_for @tape do |f| %>
+
+  <div id="tape">
+    <%= f.text_area :body %>
+  </div>
+
+  <div id="footer">
+    <div class="menu_two_items">
+      <div class="menu_item">
+        <%= image_submit_tag("tape.png", :height => 61) %><br/>
+        <%=t '.submit' %>
+      </div>
+      <div class="menu_item">
+        <%= link_to image_tag('trash.png', :height => 61), root_url %><br/>
+        <%=t 'cancel' %>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+
+<% end %>
+
+<%= info_block %>
+
+<%= focus_on :tape_body %>

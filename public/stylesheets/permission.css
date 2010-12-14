@@ -1,0 +1,10 @@
+body {
+  background: #000;
+}
+
+div#password input, div#header input, input {
+  text-align:center;
+  color:#aaa;
+  background: #222;
+  border:1px solid #aaa;
+}

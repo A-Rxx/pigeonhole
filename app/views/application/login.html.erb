@@ -1,0 +1,10 @@
+<br/><br/><br/><br/><br/><br/><br/><br/>
+
+<div id="header">
+  <%= random_face_image %><br/>
+  <%= form_tag do %>
+    <div><%= password_field_tag 'login' %></div>
+  <% end %>
+</div>
+
+<%= focus_on :login %>

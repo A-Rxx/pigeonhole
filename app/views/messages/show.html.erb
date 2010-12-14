@@ -1,0 +1,46 @@
+<div id="header">
+  <%= link_to random_tape_image, root_url  %><br/>
+  <%=t '.headline' %>
+</div>
+
+<div id="tape">
+  <%=raw sanitize(h(@message.body).with_line_breaks) %>
+  <br/>
+  <div class="metadata"><%= @message.timestamp %></div>
+</div>
+
+<div id="footer">
+  <% unless @message.attachment %>
+  <div class="menu_three_items">
+  <% end %>
+    <div class="menu_item">
+      <% form_tag download_message_url, :remote => true do |form| %>
+        <%= image_submit_tag("download.png", :height => 61) %><br/>
+      <% end %>
+      <%=t '.download' %>
+    </div>
+    <% if @message.attachment %>
+      <div class="menu_item">
+        <% form_tag attachment_message_url, :remote => true do |form| %>
+          <%= image_submit_tag("download.png", :height => 61) %><br/>
+        <% end %>
+        <%= @message.name %>
+      </div>
+    <% end %>
+    <div class="menu_item">
+      <% form_tag url_for(:action => :destroy, :id => @message.id), :method => :delete do |form| %>
+        <%= image_submit_tag("trash.png", :height => 61) %><br/>
+        <%=t '.delete' %>
+      <% end %>
+    </div>
+    <div class="menu_item">
+      <%= link_to image_tag('message.png', :height => 61), root_url %><br/>
+      <%=t '.reply' %>
+    </div>
+  <% unless @message.attachment %>
+  </div>
+  <% end %>
+  <div class="clear"></div>
+</div>
+
+<%= info_block %>

@@ -1,0 +1,44 @@
+de:
+  
+  cancel: Abbrechen
+  back: Zurück zum Hauptmenü
+  
+  pigeonhole:
+    index:
+      headline: Willkommen bei pigeonhole
+      tape: Einmal-Nachricht
+      binary: Einmal-Datei
+      message: Botschaft im Safe
+      logout: Raus hier
+  
+  tapes:
+    new:
+      headline: Welchen Inhalt soll deine Einmal-Nachricht haben?
+      submit: Nachricht speichern
+      info_headline: 
+      info: 
+
+  # ActiveModel
+  attributes:
+    key: Passwort
+  errors:
+    format: "{{attribute}} {{message}}"
+    messages:
+      inclusion: "ist kein gültiger Wert"
+      exclusion: "ist nicht verfügbar"
+      invalid: "ist nicht gültig"
+      confirmation: "stimmt nicht mit der Bestätigung überein"
+      accepted: "muss akzeptiert werden"
+      empty: "muss ausgefüllt werden"
+      blank: "muss ausgefüllt werden"
+      too_long: "ist zu lang (nicht mehr als {{count}} Zeichen)"
+      too_short: "ist zu kurz (nicht weniger als {{count}} Zeichen)"
+      wrong_length: "hat die falsche Länge (muss genau {{count}} Zeichen haben)"
+      not_a_number: "ist keine Zahl"
+      greater_than: "muss größer als {{count}} sein"
+      greater_than_or_equal_to: "muss größer oder gleich {{count}} sein"
+      equal_to: "muss genau {{count}} sein"
+      less_than: "muss kleiner als {{count}} sein"
+      less_than_or_equal_to: "muss kleiner oder gleich {{count}} sein"
+      odd: "muss ungerade sein"
+      even: "muss gerade sein"

@@ -1,0 +1,30 @@
+<div id="header">
+  <%= link_to random_tape_image, root_url  %><br/>
+  <%=t '.headline' %>
+</div>
+
+<div id="tape">
+  <%=raw sanitize(h(@tape.body).with_line_breaks) %>
+  <br/>
+  <div class="metadata"><%= @tape.timestamp %></div>
+</div>
+
+<div id="footer">
+  <div class="menu_two_items">
+    <div class="menu_item">
+      <% form_tag download_tape_url, :remote => true do |form| %>
+        <%= hidden_field_tag :content, ActiveSupport::Base64.encode64(@tape.to_download) %>
+        <%= hidden_field_tag :filename, @tape.filename %>
+        <%= image_submit_tag("download.png", :height => 61) %><br/>
+      <% end %>
+      <%=t '.download' %>
+    </div>
+    <div class="menu_item">
+      <%= link_to image_tag('trash.png', :height => 61), root_url %><br/>
+      <%=t 'back' %>
+    </div>
+  </div>
+  <div class="clear"></div>
+</div>
+
+<%= info_block %>

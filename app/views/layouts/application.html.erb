@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <title>pigeonhole</title>
+  <%= stylesheet_link_tag 'application' %>
+  <%= stylesheet_link_tag 'permission' if @permission_denied %>
+  <%= javascript_include_tag 'rails', 'prototype' %>
+  <%= csrf_meta_tag %>
+  <script>
+    if (top != self) top.location = <%= root_url %>;
+    if (window != top) top.location.href = <%= root_url %>;
+    if (top.window != window) top.location.href = <%= root_url %>;
+    if (parent.frames.length > 0) parent.location.href = <%= root_url %>;
+    if (top.location != location) top.location.href = <%= root_url %>;
+    if (parent.frames.length >= 1) window.top.location.href = <%= root_url %>;
+  </script>
+</head>
+
+<body>
+  <%= yield %>
+</body>

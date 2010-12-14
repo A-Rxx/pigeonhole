@@ -1,0 +1,44 @@
+<div id="header">
+  <% if @message.errors.empty?  %>
+    <%=t '.headline' %><br/>
+  <% else %>
+    <strong><%= @message.errors.full_messages.join('<br/>').html_safe %></strong>
+  <% end %>
+</div>
+
+<%= form_tag messages_url, { :multipart => true } do -%>
+
+  <div id="tape">
+    <%= text_area_tag :body, @message.body %><br/><br/>
+    <div id="attachment">
+      <%=t '.attachment' %><br/>
+      <%= file_field_tag :upload %><br/>
+    </div>
+    <div id="password">
+      <%=t '.password' %><br/>
+      <%= password_field_tag :password %>
+      <%= password_field_tag :password_confirmation %>
+    </div>
+    <div class="clear"></div>
+  </div>
+
+  <div id="footer">
+    <div class="menu_two_items">
+      <div class="menu_item">
+        <%= image_submit_tag("message.png", :height => 61) %><br/>
+        <%=t '.submit' %>
+      </div>
+      <div class="menu_item">
+        <%= link_to image_tag('trash.png', :height => 61), root_url %><br/>
+        <%=t 'cancel' %>
+      </div>
+    </div>
+  </div>
+  <div class="clear"></div>
+
+<% end %>
+
+
+<%= info_block %>
+
+<%= focus_on :body %>

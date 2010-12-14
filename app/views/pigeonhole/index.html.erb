@@ -1,0 +1,23 @@
+<div id="menu_headline">
+  <%=t '.headline' %>
+</div>
+
+<div class="menu_item orange">
+  <%= link_to image_tag('tape.png', :height => 61), new_tape_url %><br/>
+  <%=t '.tape' %>
+</div>
+
+<div class="menu_item blue">
+  <%= link_to image_tag('binary.png', :height => 61), new_binary_url %><br/>
+  <%=t '.binary' %>
+</div>
+
+<div class="menu_item green">
+  <%= link_to image_tag('message.png', :height => 61), new_message_url %><br/>
+  <%=t '.message' %>
+</div>
+
+<div class="menu_item pink">
+  <%= link_to image_tag('trash.png', :height => 61), logout_url %><br/>
+  <%=t '.logout' %>
+</div>

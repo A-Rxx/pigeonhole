@@ -16,7 +16,7 @@ module Pigeonhole
     end
     
     def login_required
-      if logged_in_via_session? or logged_in_via_form?
+      if (logged_in_via_session? || logged_in_via_form?)
         perform_login
         return true
       else

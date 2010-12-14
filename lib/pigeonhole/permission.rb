@@ -6,7 +6,7 @@ module Pigeonhole
     # Load the password from a config file
     #
     def pincode
-      File.read(Rails.root.join('config', 'password.txt'))
+      File.read(Rails.root.join('config', 'password.txt')).chomp
     end
     
     def perform_login

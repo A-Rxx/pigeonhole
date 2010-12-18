@@ -108,3 +108,8 @@ textarea#tape_body, textarea#body {
   width:672px;
   height:280px;
 }
+
+/* Header > Flags */
+#flags { margin:0 auto; margin-top:35px;; width:150px; text-align:center; }
+#flags ul { list-style:none; position:relative; overflow:hidden; }
+#flags ul li { float:left;  white-space:nowrap; margin-right:4px; position:relative; }

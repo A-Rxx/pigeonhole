@@ -21,3 +21,13 @@
   <%= link_to image_tag('trash.png', :height => 61), logout_url %><br/>
   <%=t '.logout' %>
 </div>
+
+<div class="clear"></div>
+
+<div id="flags">
+  <ul>
+  <% I18n.available_locales.each do |locale| %>
+    <li><%= link_to image_tag("locales/#{locale}.png"), root_path(:locale => locale) %></li>
+  <% end %>
+  </ul>
+</div>

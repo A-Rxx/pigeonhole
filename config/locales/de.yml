@@ -15,8 +15,57 @@ de:
     new:
       headline: Welchen Inhalt soll deine Einmal-Nachricht haben?
       submit: Nachricht speichern
-      info_headline: 
-      info: 
+      info_headline: Weitere Informationen über Einmal-Nachrichten
+      info: Wenn du eine Nachricht via Email versendest kann jeder Netzwerkadministrator und Emailprovider die Nachricht unterwegs lesen. Stattdessen solltest du deine Nachticht hier als eine Einmal-Nachricht hinterlassen und dem Empfänger einen Link schicken, mit dem er die Nachricht runterladen kann. Auf diese Weise kann dein Emailprovider die Nachricht nicht lesen, es sei denn er würde den Link zur Einmal-Nachricht, den du per Email versendest, tatsächlich anlicken. Aber dieser Link ist selbstzerstörerisch. Das heißt, wenn jemand die Einmal-Nachricht abgefangen und gelesen hätte, dann würde dein ursprünglicher Empfänger die Einmal-Nachricht hier nicht mehr vorfinden können. In dem Fall wäre die Nachricht zwar kompromittiert, dies würde aber schnell auffallen, wenn der legitime Empfänger hier eine Warnung statt der Botschaft vorfindet. Einmal-Nachrichten sind für Botschaften vorgesehen, bei denen es nicht so schlimm ist wenn sie kompromittiert würden, aber dennoch wird eine weitaus größere Privatsphäre bewahrt als wenn man die Botschaft unverschlüsselt direkt via Email senden würde. Beachte, dass du den Link nicht an mehrere Empfänger schicken kannst, weil nur die erste Person die auf den Link klickt die Einmal-Nachricht lesen kann. Sofern du mehr Sicherheit benötigst, kannst du stattdessen eine "Botschaft im Safe" schicken. Eine solche kann mit einem Passwort gesichert werden und auch Anhänge enthalten.
+    create:
+      headline: 'Deine Einmal-Nachricht wurde gespeichert. Sie kann unter folgendem Link vom Empfänger gelesen werden:'
+      info_headline: Anleitung
+      info: Diesen Link solltest du bitte nicht öffnen, sondern in die Zwischenablage kopieren. Anschließed schickst du eine gewönliche Email an den gewünschten Empfänger deiner Botschaft. In diese Email fügst du den obigen Link ein. Wenn der Empfänger dann auf diesen Link klickt, wird die Botschaft geöffnet und kann gelesen werden.
+    show:
+      headline: 'Dies ist eine Einmal-Nachricht mit folgendem Inhalt:'
+      download: Nachricht runterladen
+      info_headline: Weitere Informationen über Einmal-Nachrichten
+      info: Wenn du eine Nachricht via Email versendest kann jeder Netzwerkadministrator und Emailprovider die Nachricht unterwegs lesen. Darum hat der Absender dieser Botschaft sie hier als so genannte Einmal-Nachricht hinterlassen und dir einen Link geschickt mit dem du sie lesen kannst. Auf diese Weise kann dein Emailprovider die Nachricht nicht lesen, es sei denn er hätte auf den Link zur Einmal-Nachricht, den du per Email erhalten hast, geklickt. Aber dieser Link ist selbstzerstörerisch. Das heißt, wenn jemand die Einmal-Nachricht abgefangen und gelesen hätte, dann hättest du sie jetzt hier nicht mehr vorfinden können. Da du die Einmal-Nachricht nun gelesen hast, wurde sie von unserem Server gelöscht und der Link den du erhalten hast funktioniert nicht noch einmal. So lange du diese Seite nicht verlässt hast du die möglichkeit die Nachricht als Text-Datei runterzuladen. Wenn du möchtest kannst du auf diese Einmal-Nachricht antworten, indem du selbst eine erstellst. Klicke hierfür einfach auf "Zurück zum Hauptmenü" und dann auf "Einmal-Nachricht" für weitere Instruktionen.
+    tampered:
+      headline: Achtung!
+      warning: Diese Einmal-Nachricht wurde bereits gelesen und daher vom Server gelöscht.<br/>Bitte informiere den Absender darüber, dass du die Nachricht nicht vorfinden konntest!
+      info_headline: Weitere Informationen über Einmal-Nachrichten
+      info: Wenn du eine Nachricht via Email versendest kann jeder Netzwerkadministrator und Emailprovider die Nachricht unterwegs lesen. Darum hat der Absender dieser Botschaft sie hier als so genannte Einmal-Nachricht hinterlassen und dir einen Link geschickt mit dem du sie lesen kannst. Auf diese Weise kann dein Emailprovider die Nachricht nicht lesen, es sei denn er hätte auf den Link zur Einmal-Nachricht, den du per Email erhalten hast, geklickt. Leider hat bereits jemand auf den Link zu dieser Einmal-Nachricht geklickt und sie gelesen. Vielleicht war dies nur ein Versehen und der Absender selbst hat unbeabsichtigt seine Nachricht an dich geöffnet, oder vielleicht hast du selbst diesen Link vorher schon einmal geöffnet. Schlimmstenfalls hat tatsächlich jemand die Nachricht abgefangen und die Botschaft wurde kompromittiert. Bitte kontaktiere den Absender dieser Einmal-Nachricht, so dass du sicherstellen kannst ob es sich nur um ein Versehen handelt, oder ob die Nachricht von jemandem gelesen wurde für den die Nachricht nicht bestimmt war.
+  binaries:
+    new:
+      headline: Welche Datei möchtest du hochladen?
+      submit: Datei hochladen
+      info_headline: Weitere Informationen über Einmal-Dateien
+      info: Wenn du eine Email mit Anhang versendest kann jeder Netzwerkadministrator und Emailprovider den Anhang unterwegs runterladen. Stattdessen solltest du eine Datei hier als eine Einmal-Datei hinterlassen und dem Empfänger einen Link schicken, mit dem er die Datei runterladen kann. Auf diese Weise kann dein Emailprovider die Datei nicht lesen, es sei denn er würde den Link zur Einmal-Datei, den du per Email versendest, tatsächlich anlicken. Aber dieser Link ist selbstzerstörerisch. Das heißt, wenn jemand die Einmal-Datei abgefangen und runtergeladen hätte, dann würde dein ursprünglicher Empfänger die Einmal-Datei hier nicht mehr vorfinden können. In dem Fall wäre die Datei zwar kompromittiert, dies würde aber schnell auffallen, wenn der legitime Empfänger hier eine Warnung statt der Datei vorfindet. Einmal-Dateien sind für Anhänge vorgesehen, bei denen es nicht so schlimm ist wenn sie kompromittiert würden, aber dennoch wird eine weitaus größere Privatsphäre bewahrt als wenn man die Datei unverschlüsselt direkt als Email-Anhang senden würde. Beachte, dass du den Link nicht an mehrere Empfänger schicken kannst, weil nur die erste Person die auf den Link klickt die Einmal-Datei runterladen kann. Sofern du mehr Sicherheit benötigst, kannst du stattdessen eine "Botschaft im Safe" schicken. Eine solche kann, inklusive optionalem Dateianhang, mit einem Passwort gesichert werden.
+    create:
+      headline: 'Deine Einmal-Datei wurde gespeichert. Sie kann unter folgendem Link vom Empfänger runtergeladen werden:'
+      info_headline: Anleitung
+      info: Diesen Link solltest du bitte nicht öffnen, sondern in die Zwischenablage kopieren. Anschließed schickst du eine gewönliche Email an den gewünschten Empfänger deiner Datei. In diese Email fügst du den obigen Link ein. Wenn der Empfänger dann auf diesen Link klickt, wird die Datei geöffnet und kann gelesen werden.
+    tampered:
+      headline: Achtung!
+      warning: Diese Einmal-Datei wurde bereits runtergeladen und daher vom Server gelöscht.<br/>Bitte informiere den Absender darüber, dass du die Datei nicht vorfinden konntest!
+      info_headline: Weitere Informationen über Einmal-Dateien
+      info: Wenn du eine Email mit Anhang versendest kann jeder Netzwerkadministrator und Emailprovider den Anhang unterwegs runterladen. Darum hat der Absender dieser Datei sie hier als so genannte Einmal-Datei hinterlassen und dir einen Link geschickt mit dem du sie runterladen kannst. Auf diese Weise kann dein Emailprovider die Datei nicht lesen, es sei denn er hätte auf den Link zur Einmal-Datei, den du per Email erhalten hast, geklickt. Leider hat bereits jemand auf den Link zu dieser Einmal-Datei geklickt und sie runtergeladen. Vielleicht war dies nur ein Versehen und der Absender selbst hat unbeabsichtigt seine Datei an dich geöffnet, oder vielleicht hast du selbst diesen Link vorher schon einmal geöffnet. Schlimmstenfalls hat tatsächlich jemand die Datei abgefangen und damit kompromittiert. Bitte kontaktiere den Absender dieser Einmal-Datei, so dass du sicherstellen kannst ob es sich nur um ein Versehen handelt, oder ob die Datei von jemandem runtergeladen wurde für den die Nachricht nicht bestimmt war.
+
+  messages:
+    new:
+      headline: Welchen Inhalt soll deine Botschaft im Safe haben?
+      submit: Botschaft speichern
+      info_headline: Weitere Informationen über Botschaften im Safe
+      info: 'Wenn du eine Nachricht via Email versendest kann jeder Netzwerkadministrator und Emailprovider die Nachricht unterwegs lesen. Stattdessen solltest du deine Nachticht hier als eine passwortgeschützte Botschaft im Safe hinterlassen und dem Empfänger einen Link schicken, mit dem er die Nachricht lesen kann. Auf diese Weise können nur Personen die den Link und das Passwort kennen die Nachricht lesen. Natürlich musst du hierfür erst einmal ein Passwort mit dem/den Empfänger(n) ausgemacht haben. Beachte, dass die Botschaft im Safe nach zwei Wochen gelöscht wird - unabhängig davon ob sie gelesen wurde oder nicht. Wenn die Botschaft geöffnet wird, hat der Empfänger die Möglichkeit die Nachricht zu löschen, runterzuladen oder den Anhang runterzuladen. Wenn du die Botschaft an mehrere Empfänger schickst und einer von ihnen löscht die Botschaft, dann können die anderen nicht mehr auf diese zugreifen. Hier ein Tip wie du sicher ein Passwort ausmachen kannst (natürlich abgesehen von persönlich oder telefonisch): du kannst ein Passwort mit einer "Einmal-Nachricht" vorschlagen. Dies kannst du vom Hauptmenü aus machen.'
+      attachment: Anhang gefällig?
+      password: 'Abschließen mit einem Password (2x):'
+    create:
+      headline: 'Deine Botschaft im Safe wurde gespeichert. Sie kann unter folgendem Link vom Empfänger gelesen werden:'
+      info_headline: Anleitung
+      info: Diesen Link musst du nicht öffnen, sondern in die Zwischenablage kopieren. Anschließed schickst du eine gewönliche Email an den gewünschten Empfänger deiner Botschaft. In diese Email fügst du den obigen Link ein. Wenn der Empfänger dann auf diesen Link klickt, wird er nach dem Passwort gefragt. Kennt er das Passwort, wird die Botschaft geöffnet und kann gelesen werden.
+    show:
+      headline: 'Dies ist eine Botschaft im Safe mit folgendem Inhalt:'
+      download: Text runterladen
+      delete: Botschaft löschen
+      reply: <span style="color:#a00"><strong>Logout</strong></span> oder antworten
+      info_headline: Weitere Informationen über Botschaften im Safe
+      info: Wenn du eine Nachricht via Email versendest kann jeder Netzwerkadministrator und Emailprovider die Nachricht unterwegs lesen. Darum hat der Absender dieser Botschaft sie hier als so genannte Botschaft im Safe hinterlassen und dir einen Link geschickt mit dem du sie lesen kannst. Auf diese Weise kann dein Emailprovider die Nachricht nicht lesen, es sei denn er hätte auf den Link zur Botschaft, den du per Email erhalten hast, geklickt und dann noch das Passwort gekannt. Wenn du möchtest kannst du auf diese Botschaft im Safe antworten, indem du selbst eine erstellst. Klicke hierfür einfach auf "Zurück zum Hauptmenü" und dann auf "Botschaft im Safe" für weitere Instruktionen. Und vergiss bitte nicht auf "Logout" zu klicken.
 
   # ActiveModel
   attributes:

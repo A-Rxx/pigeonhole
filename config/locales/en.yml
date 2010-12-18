@@ -60,15 +60,13 @@ en:
       headline: 'Your message in a safe has been stored. This is the pickup location:'
       info_headline: Instructions
       info: Do not open this link, but copy it into your clipboard. Then, send a regular email to the person you would like to read the message. In that email, paste the link from above. When the person clicks on this link, the password needs to be entered and then the message can be read.
-    password:
-      headline: 'Please unlock your message:'
     show:
       headline: 'This is a message in a safe with the following message:'
       download: Download text
       delete: Delete message
       reply: <span style="color:#a00"><strong>Logout</strong></span> or reply
       info_headline: Information about messages in a safe
-      info: If you send a message via email, every network operator and your email provider can (and probably do) read it. That's why the sender of this link put the message into a safe and sent you a link to read it. This way, your email provider cannot read the message unless he would actually open the link to the safe and also know the password. If you would like to, you can reply to this message by creating a new message in a safe yourself. Just click on "back to the main menu" and then on "message in a safe" for more instructions.
+      info: If you send a message via email, every network operator and your email provider can (and probably do) read it. That's why the sender of this link put the message into a safe and sent you a link to read it. This way, your email provider cannot read the message unless he would actually open the link to the safe and also know the password. If you would like to, you can reply to this message by creating a new message in a safe yourself. Just click on "back to the main menu" and then on "message in a safe" for more instructions. And please don't forget to click on "Logout"
 
   # ActiveModel
   attributes:

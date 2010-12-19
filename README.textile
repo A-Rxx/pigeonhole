@@ -1,1 +1,24 @@
-TODO
+h1. Pigeonhole
+
+This is a small Rails 3 website tool thingy to store symmetrically encrypted messages on a server. You can send self-destructive tapes, files, or messages in a safe. Your recipient gets a URL where the message can be picked up. This way you can have a little bit more privacy regarding your email traffic.
+
+h3. Self-destructive Tape
+
+If you send a message via email, every network operator and your email provider can (and probably do) read it. Instead, you should put your message into a self-destructive tape and send the recipient a link to where this tape can be downloaded. This way, your email provider cannot read your message unless he would actually open the link to the tape, which you sent via email. But the link is self-destructive. This means that when somebody intercepted the tape and read it, your original recipient would no longer be able to read it. In that case, the message would be compromised, but you would know it as soon as the legitimate recipient would try to read it and see a warning message instead. Self-destructive tapes are meant for messages that are not terribly important if compromised, but there is still considerably more privacy than when you would send your message in plain-text directly via email. Note that you cannot send the link for the tape to several people, because only the first person will be able to open it. In case you do need more security, consider sending a "message in a safe" instead. There you can add a password and also upload attachments.
+
+h3. Message in a Safe
+
+If you send a message via email, every network operator and your email provider can (and probably do) read it. Instead, you should put your message into a password-protected safe and send the recipient a link to where this safe can be opened. This way, only people who have both the link and the password, can read the message. Of course, you would first have to agree on a password that the recipient(s) must know for opening the message. Note that the message in the safe will be deleted after two weeks - whether it has been read or not. When opening the message, the user has the option to delete the message, to download it, or to download the attached file. If you sent the message to several people and one deleted the message, the others won't be able to read the message any longer. Just a hint on how you could agree on a password (other than via the phone, of course) - consider sending a self-destructive tape suggesting a password.
+
+h3. License
+
+Pigeonhole is released under
+The MIT License
+
+Copyright (c) 2010 funkensturm.com
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
